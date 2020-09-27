@@ -22,14 +22,14 @@ function unleashDog(dogName, dogBreed){
     console.log(`Wake ${dogName} the ${dogBreed}`);
 }
 
-function arrayOFunctions() {
-    let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
-}
 
-function exerciseDog(arrayOFunctions) {
+let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+
+
+function exerciseDog(routine) {
     newArr = []
-    for (let i = 0; i < arrayOFunctions.length; i++) {
-        newArr.push(arrayOFunctions);
+    for (let i = 0; i < routine.length; i++) {
+        newArr.push(routine);
     }
     return newArr;
 }
