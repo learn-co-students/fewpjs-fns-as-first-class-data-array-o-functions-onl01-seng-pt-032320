@@ -22,21 +22,21 @@ function unleashDog(dogName, dogBreed){
     return(`Unleash ${dogName} the ${dogBreed}`);
 }
 
-function arrayOFunctions(){
-let routine = ['wakeDog()', 'leashDog()', 'walkToPark()', 'throwFrisbee()', 'walkHome()', 'unleashDog()'];
-    newArr = []
-    for (let i = 0; i < routine.length; i++) {
-        newArr.push(routine);
-    }
-    return newArr
- 
-}
+let routine;
+routine = ['wakeDog()', 'leashDog()', 'walkToPark()',
+    'throwFrisbee()', 'walkHome()', 'unleashDog()'];
+   
 
-// function exerciseDog(dogName, dogBreed) {
-//     newArr = []
-//     for (let i = 0; i < routine.length; i++) {
-//         newArr.push(routine);
-//     }
-//     return newArr;
-// }
-//  exerciseDog("Sam", "puggle");
+function arrayOFunctions(){
+  routine.wakeDog();  
+}
+ 
+
+function exerciseDog(dogName, dogBreed) {
+    newArr = []
+    for (let i = 0; i < arrayOFunctions().length; i++) {
+        newArr.push(arrayOFunctions());
+    }
+    return newArr;
+}
+ exerciseDog("Sam", "puggle");
