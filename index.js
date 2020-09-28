@@ -27,15 +27,15 @@ routine = ['wakeDog()', 'leashDog()', 'walkToPark()',
     'throwFrisbee()', 'walkHome()', 'unleashDog()'];
    
 
-function arrayOFunctions(){
-  routine.wakeDog();  
-}
+// function arrayOFunctions(){
+//   routine.wakeDog();  
+// }
  
 
 function exerciseDog(dogName, dogBreed) {
     newArr = []
-    for (let i = 0; i < arrayOFunctions().length; i++) {
-        newArr.push(arrayOFunctions());
+    for (let i = 0; i < routine.length; i++) {
+        newArr.push(routine);
     }
     return newArr;
 }
