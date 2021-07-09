@@ -1,8 +1,15 @@
+
+// describe is used to group tests with similar functionality
 describe("index.js", () => {
+
   describe("independent functions", () => {
+    // "it" is used for specific test cases
     it("has a function wakeDog", () => {
       const a = "Xerox"
       const b = "Border Collie"
+
+      // expect is built in to mocha but also can be brought in from other assertion 
+      // libries like chai
       expect(wakeDog(a,b)).to.equal(`Wake ${a} the ${b}`)
     })
     it("has a function leashDog", () => {
